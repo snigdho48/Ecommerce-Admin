@@ -1,3 +1,2 @@
-*.json filter=lfs diff=lfs merge=lfs -text
 .json filter=lfs diff=lfs merge=lfs -text lockable
 android/app/google-services.json filter=lfs diff=lfs merge=lfs -text lockable
