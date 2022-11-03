@@ -1,4 +1,6 @@
- import 'package:ecom_admin_3/models/category_model.dart';
+ import 'package:ecom_admin_07/models/category_model.dart';
+
+import 'image_model.dart';
 
 const String collectionProduct='Products';
 
@@ -9,6 +11,7 @@ const String collectionProduct='Products';
  const String productFieldLongDescription='longDescription';
  const String productFieldSalePrice='salePrice';
  const String productFieldStock='stock';
+ const String productFieldAvgRating='avgRating';
  const String productFieldDiscount='discount';
  const String productFieldThumbnail='thumbnail';
  const String productFieldImages='images';
@@ -25,9 +28,10 @@ class ProductModel{
   String? longDescription;
   num salePrice;
   num stock;
+  num avgRating;
   num productDiscount;
-  String thumbnailImageUrl;
-  List<String>? additionalImages;
+  ImageModel thumbnailImageModel;
+  List<ImageModel>? additionalImageModels;
   bool available;
   bool featured;
 
@@ -39,9 +43,10 @@ class ProductModel{
       this.longDescription,
       required this.salePrice,
       required this.stock,
-      this.productDiscount=0,
-      required this.thumbnailImageUrl,
-      this.additionalImages,
+      this.avgRating = 0.0,
+      this.productDiscount = 0,
+      required this.thumbnailImageModel,
+      this.additionalImageModels,
       this.available=true,
       this.featured=false,
   });
@@ -55,9 +60,12 @@ class ProductModel{
       productFieldLongDescription:longDescription,
       productFieldSalePrice:salePrice,
       productFieldStock:stock,
+      productFieldAvgRating:avgRating,
       productFieldDiscount:productDiscount,
-      productFieldThumbnail:thumbnailImageUrl,
-      productFieldImages:additionalImages,
+      productFieldThumbnail:thumbnailImageModel.toMap(),
+      productFieldImages: additionalImageModels == null ? null :
+        List.generate(additionalImageModels!.length, (index) =>
+            additionalImageModels![index].toMap()),
       productFieldAvailable:available,
       productFieldFeatured:featured,
 
@@ -67,14 +75,17 @@ class ProductModel{
   factory ProductModel.fromMap(Map<String,dynamic>map)=>ProductModel(
       productId: map[productFieldId],
       productName: map[productFieldName],
-      category:CategoryModel.fromMap( map[productFieldCategory]),
+      category: CategoryModel.fromMap(map[productFieldCategory]),
       shortDescription:map[productFieldShortDescription],
       longDescription:map[productFieldLongDescription],
       salePrice:  map[productFieldSalePrice],
       stock:  map[productFieldStock],
+      avgRating:  map[productFieldAvgRating],
       productDiscount:map[productFieldDiscount],
-      thumbnailImageUrl: map[productFieldThumbnail],
-      additionalImages: map[productFieldImages]!=null? map[productFieldImages]as List<String>:null,
+      thumbnailImageModel: map[productFieldThumbnail],
+      additionalImageModels: map[productFieldImages] == null? null :
+        List.generate((map[productFieldImages] as List).length, (index) =>
+            ImageModel.fromMap((map[productFieldImages] as List)[index])),
       available: map[productFieldAvailable],
       featured: map[productFieldFeatured],
   );

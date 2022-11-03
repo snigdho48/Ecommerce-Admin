@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:ecom_admin_3/models/address_model.dart';
 
+import 'address_model.dart';
 const String collectionUser='User';
 
 const String userFieldId='userId';
@@ -49,7 +49,7 @@ String email;
   factory UserModel.fromMap(Map<String,dynamic>map)=>UserModel(
     userId: map[userFieldId],
     displayName: map[userFieldDisplayName],
-    addressModel:map[userFieldAddressModel]==null ? null:AddressModel.fromMap(map[userFieldAddressModel]),
+    addressModel: map[userFieldAddressModel] == null ? null : AddressModel.fromMap(map[userFieldAddressModel]),
     userCreationTime: map[userFieldCreationTime],
     gender: map[userFieldGender],
     age: map[userFieldAge],

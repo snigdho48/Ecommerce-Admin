@@ -1,6 +1,6 @@
-import 'package:ecom_admin_3/models/date_model.dart';
 
-const String collectionPurchase='Products';
+import 'date_model.dart';
+const String collectionPurchase='Purchases';
 
 const String purchaseFieldId='purchaseId';
 const String purchaseFieldProductId='productId';
