@@ -1,4 +1,4 @@
-import 'package:ecom_admin_07/models/dashboard_model.dart';
+import '../models/dashboard_model.dart';
 import 'package:flutter/material.dart';
 
 class DashboardItemView extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:ecom_admin_07/pages/login_page.dart';
+import '../pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 import '../auth/auth_service.dart';

@@ -1,10 +1,11 @@
-import 'package:ecom_admin_07/auth/auth_service.dart';
-import 'package:ecom_admin_07/pages/launcher_page.dart';
+import '../auth/auth_service.dart';
+import '../pages/launcher_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../customwidgets/dashboard_item_view.dart';
 import '../models/dashboard_model.dart';
+import '../providers/order_provider.dart';
 import '../providers/product_provider.dart';
 
 class DashboardPage extends StatelessWidget {
@@ -14,6 +15,9 @@ class DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Provider.of<ProductProvider>(context, listen: false).getAllCategories();
+    Provider.of<ProductProvider>(context, listen: false).getAllProducts();
+    Provider.of<ProductProvider>(context, listen: false).getAllPurchases();
+    Provider.of<OrderProvider>(context, listen: false).getOrderConstants();
     return Scaffold(
       appBar: AppBar(
         title: const Text('Dashboard'),
@@ -28,8 +32,8 @@ class DashboardPage extends StatelessWidget {
         ],
       ),
       body: GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: MediaQuery.of(context).size.width > 600? 3 : 2,
         ),
         itemCount: dashboardModelList.length,
         itemBuilder: (context, index) =>

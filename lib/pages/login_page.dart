@@ -1,5 +1,5 @@
-import 'package:ecom_admin_07/auth/auth_service.dart';
-import 'package:ecom_admin_07/pages/launcher_page.dart';
+import '../auth/auth_service.dart';
+import '../pages/launcher_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';

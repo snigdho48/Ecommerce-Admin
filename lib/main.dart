@@ -1,14 +1,14 @@
-import 'package:ecom_admin_07/pages/add_product_page.dart';
-import 'package:ecom_admin_07/pages/category_page.dart';
-import 'package:ecom_admin_07/pages/dashboard_page.dart';
-import 'package:ecom_admin_07/pages/launcher_page.dart';
-import 'package:ecom_admin_07/pages/login_page.dart';
-import 'package:ecom_admin_07/pages/order_page.dart';
-import 'package:ecom_admin_07/pages/product_details_page.dart';
-import 'package:ecom_admin_07/pages/product_repurchase_page.dart';
-import 'package:ecom_admin_07/pages/settings_page.dart';
-import 'package:ecom_admin_07/pages/user_list_page.dart';
-import 'package:ecom_admin_07/providers/product_provider.dart';
+import '../pages/add_product_page.dart';
+import '../pages/category_page.dart';
+import '../pages/dashboard_page.dart';
+import '../pages/launcher_page.dart';
+import '../pages/login_page.dart';
+import '../pages/order_page.dart';
+import '../pages/product_details_page.dart';
+import '../pages/product_repurchase_page.dart';
+import '../pages/settings_page.dart';
+import '../pages/user_list_page.dart';
+import '../providers/product_provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
@@ -16,6 +16,7 @@ import 'package:provider/provider.dart';
 
 import 'pages/report_page.dart';
 import 'pages/view_product_page.dart';
+import 'providers/order_provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,6 +24,7 @@ void main() async {
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(create: (_) => ProductProvider()),
+      ChangeNotifierProvider(create: (_) => OrderProvider()),
     ],
       child: const MyApp()));
 }
@@ -46,11 +48,11 @@ class MyApp extends StatelessWidget {
         DashboardPage.routeName : (_) => const DashboardPage(),
         AddProductPage.routeName : (_) => const AddProductPage(),
         ViewProductPage.routeName : (_) => const ViewProductPage(),
-        ProductDetailsPage.routeName : (_) => const ProductDetailsPage(),
+        ProductDetailsPage.routeName : (_) => ProductDetailsPage(),
         CategoryPage.routeName : (_) => const CategoryPage(),
         OrderPage.routeName : (_) => const OrderPage(),
         ReportPage.routeName : (_) => const ReportPage(),
-        SettingsPage.routeName : (_) => const SettingsPage(),
+        SettingsPage.routeName : (_) =>  SettingsPage(),
         ProductRepurchasePage.routeName : (_) => const ProductRepurchasePage(),
         UserListPage.routeName : (_) => const UserListPage(),
       },

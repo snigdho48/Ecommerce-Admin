@@ -1,5 +1,5 @@
-const String collectionOrderConstant='OrderConstant';
-
+const String collectionUtils='Utils';
+const String documentOrderConstants = 'OrderConstants';
 const String orderConFieldDiscount='discount';
 const String orderConFieldVat='vat';
 const String orderConFieldDeliCharge='deliveryCharge';
@@ -10,12 +10,12 @@ class OrderConstantModel{
   num deliveryCharge;
 
   OrderConstantModel({
-   this.discount=0,
-   this.vat=0,
-   this.deliveryCharge=0,
+   this.discount = 0,
+   this.vat = 0,
+   this.deliveryCharge = 0,
   });
 
-  Map<String,dynamic>toMAp(){
+  Map<String,dynamic> toMap(){
     return <String,dynamic>{
       orderConFieldDiscount:discount,
       orderConFieldVat:vat,

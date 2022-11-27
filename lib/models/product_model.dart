@@ -1,4 +1,4 @@
- import 'package:ecom_admin_07/models/category_model.dart';
+ import '../models/category_model.dart';
 
 import 'image_model.dart';
 
@@ -31,7 +31,7 @@ class ProductModel{
   num avgRating;
   num productDiscount;
   ImageModel thumbnailImageModel;
-  List<ImageModel>? additionalImageModels;
+  List<String> additionalImageModels;
   bool available;
   bool featured;
 
@@ -46,7 +46,7 @@ class ProductModel{
       this.avgRating = 0.0,
       this.productDiscount = 0,
       required this.thumbnailImageModel,
-      this.additionalImageModels,
+      required this.additionalImageModels,
       this.available=true,
       this.featured=false,
   });
@@ -54,7 +54,7 @@ class ProductModel{
   Map<String,dynamic>toMap(){
     return <String,dynamic>{
       productFieldId:productId,
-      productFieldName:productId,
+      productFieldName : productName,
       productFieldCategory:category.toMap(),
       productFieldShortDescription:shortDescription,
       productFieldLongDescription:longDescription,
@@ -63,9 +63,7 @@ class ProductModel{
       productFieldAvgRating:avgRating,
       productFieldDiscount:productDiscount,
       productFieldThumbnail:thumbnailImageModel.toMap(),
-      productFieldImages: additionalImageModels == null ? null :
-        List.generate(additionalImageModels!.length, (index) =>
-            additionalImageModels![index].toMap()),
+      productFieldImages: additionalImageModels,
       productFieldAvailable:available,
       productFieldFeatured:featured,
 
@@ -82,10 +80,8 @@ class ProductModel{
       stock:  map[productFieldStock],
       avgRating:  map[productFieldAvgRating],
       productDiscount:map[productFieldDiscount],
-      thumbnailImageModel: map[productFieldThumbnail],
-      additionalImageModels: map[productFieldImages] == null? null :
-        List.generate((map[productFieldImages] as List).length, (index) =>
-            ImageModel.fromMap((map[productFieldImages] as List)[index])),
+      thumbnailImageModel: ImageModel.fromMap(map[productFieldThumbnail]),
+      additionalImageModels: (map[productFieldImages] as List).map((e) => e as String).toList(),
       available: map[productFieldAvailable],
       featured: map[productFieldFeatured],
   );

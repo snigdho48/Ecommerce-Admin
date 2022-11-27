@@ -1,7 +1,7 @@
-import 'package:ecom_admin_07/pages/category_page.dart';
-import 'package:ecom_admin_07/pages/order_page.dart';
-import 'package:ecom_admin_07/pages/user_list_page.dart';
-import 'package:ecom_admin_07/pages/view_product_page.dart';
+import '../pages/category_page.dart';
+import '../pages/order_page.dart';
+import '../pages/user_list_page.dart';
+import '../pages/view_product_page.dart';
 import 'package:flutter/material.dart';
 
 import '../pages/add_product_page.dart';

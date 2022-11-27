@@ -2,9 +2,9 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:ecom_admin_07/models/category_model.dart';
-import 'package:ecom_admin_07/models/product_model.dart';
-import 'package:ecom_admin_07/models/purchase_model.dart';
+import '../models/category_model.dart';
+import '../models/product_model.dart';
+import '../models/purchase_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:image_picker/image_picker.dart';
@@ -355,6 +355,7 @@ class _AddProductPageState extends State<AddProductPage> {
             productDiscount: num.parse(_discountController.text),
             stock: num.parse(_quantityController.text),
             category: categoryModel!,
+            additionalImageModels: ['','',''],
             thumbnailImageModel: imageModel,
         );
         final purchaseModel = PurchaseModel(
