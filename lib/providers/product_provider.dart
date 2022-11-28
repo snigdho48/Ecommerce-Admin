@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 
 import '../db/db_helper.dart';
 import '../models/category_model.dart';
+import '../models/comment_model.dart';
 import '../models/image_model.dart';
 import '../utils/constants.dart';
 
@@ -59,6 +60,10 @@ class ProductProvider extends ChangeNotifier{
       notifyListeners();
     });
   }
+
+  ProductModel getProductByIdFromCache(String id) {
+    return productList.firstWhere((element) => element.productId == id);
+  }
   
 
   List<CategoryModel> getCategoriesForFiltering() {
@@ -101,6 +106,17 @@ class ProductProvider extends ChangeNotifier{
   double priceAfterDiscount(num price, num discount) {
     final discountAmount = (price * discount) / 100;
     return price - discountAmount;
+  }
+
+  Future<List<CommentModel>> getCommentsByProduct(String s) async {
+    final snapshot = await DbHelper.getCommentsByProduct(s);
+    final commentList = List.generate(snapshot.docs.length,
+            (index) => CommentModel.fromMap(snapshot.docs[index].data()));
+    return commentList;
+  }
+
+  Future<void> approveComment(String productId, CommentModel commentModel) {
+    return DbHelper.approveComment(productId, commentModel);
   }
 
 }

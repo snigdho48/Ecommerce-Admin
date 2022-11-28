@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\sqflite\\intermediates\\merged_res\\release\\values-pl\\values-pl.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\5412468b3abf0f427c1f5a7e96002321\\transformed\\core-1.6.0\\res\\values-pl\\values-pl.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\sqflite\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-pl\\values-pl.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\5412468b3abf0f427c1f5a7e96002321\\transformed\\core-1.6.0\\res\\values-pl\\values-pl.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\connectivity_plus\\intermediates\\merged_res\\release\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\5412468b3abf0f427c1f5a7e96002321\\transformed\\core-1.6.0\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\connectivity_plus\\intermediates\\merged_res\\release\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\5412468b3abf0f427c1f5a7e96002321\\transformed\\core-1.6.0\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\connectivity_plus\\intermediates\\merged_res\\release\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\5412468b3abf0f427c1f5a7e96002321\\transformed\\core-1.6.0\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\connectivity_plus\\intermediates\\merged_res\\release\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\5412468b3abf0f427c1f5a7e96002321\\transformed\\core-1.6.0\\res\\layout-v21\\notification_action.xml"
+    }
+]

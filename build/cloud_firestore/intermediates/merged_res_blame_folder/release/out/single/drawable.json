@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\common_google_signin_btn_text_light_normal.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\98352003647f500e27a97fb2b624887e\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\common_google_signin_btn_text_disabled.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\98352003647f500e27a97fb2b624887e\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\5412468b3abf0f427c1f5a7e96002321\\transformed\\core-1.6.0\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\98352003647f500e27a97fb2b624887e\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\98352003647f500e27a97fb2b624887e\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\98352003647f500e27a97fb2b624887e\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\common_google_signin_btn_icon_dark_normal.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\98352003647f500e27a97fb2b624887e\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\5412468b3abf0f427c1f5a7e96002321\\transformed\\core-1.6.0\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\common_google_signin_btn_icon_light_normal.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\98352003647f500e27a97fb2b624887e\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\common_google_signin_btn_icon_light_focused.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\98352003647f500e27a97fb2b624887e\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\98352003647f500e27a97fb2b624887e\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\common_google_signin_btn_icon_dark_focused.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\98352003647f500e27a97fb2b624887e\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\common_google_signin_btn_text_light_focused.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\98352003647f500e27a97fb2b624887e\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\common_google_signin_btn_text_dark_normal.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\98352003647f500e27a97fb2b624887e\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\5412468b3abf0f427c1f5a7e96002321\\transformed\\core-1.6.0\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\common_google_signin_btn_icon_disabled.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\98352003647f500e27a97fb2b624887e\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\5412468b3abf0f427c1f5a7e96002321\\transformed\\core-1.6.0\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "C:\\Users\\MR-X\\Desktop\\ecom\\ecom_admin_3\\build\\cloud_firestore\\intermediates\\merged_res\\release\\drawable\\common_google_signin_btn_text_dark_focused.xml",
+        "source": "C:\\Users\\MR-X\\.gradle\\caches\\transforms-3\\98352003647f500e27a97fb2b624887e\\transformed\\jetified-play-services-base-18.0.1\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+    }
+]

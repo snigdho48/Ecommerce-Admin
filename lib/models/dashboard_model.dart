@@ -5,6 +5,7 @@ import '../pages/view_product_page.dart';
 import 'package:flutter/material.dart';
 
 import '../pages/add_product_page.dart';
+import '../pages/notification_page.dart';
 import '../pages/report_page.dart';
 import '../pages/settings_page.dart';
 
@@ -28,4 +29,5 @@ const List<DashboardModel>dashboardModelList = [
   DashboardModel(title: 'Users', iconData: Icons.person, routeName: UserListPage.routeName),
   DashboardModel(title: 'Settings', iconData: Icons.settings, routeName: SettingsPage.routeName),
   DashboardModel(title: 'Report', iconData: Icons.pie_chart, routeName: ReportPage.routeName),
+  DashboardModel(title: 'Notifications', iconData: Icons.notification_important, routeName: NotificationPage.routeName),
 ];
